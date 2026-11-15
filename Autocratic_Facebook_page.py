@@ -1,3 +1,7 @@
 import os
 import fb_page
-fb_page.main()
+
+try:
+    fb_page.main()
+except AttributeError:
+    print("[!] Error: 'fb_page' module has no 'main' function. Please check your .so file compilation.")
